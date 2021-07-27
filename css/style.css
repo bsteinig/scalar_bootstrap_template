@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:wght@400;700&family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;800&display=swap');
+
+:root{
+    --sans-serif: 'Inter', sans-serif;
+    --serif: 'Bona Nova', serif;
+    --display: 'Inter', sans-serif;
+    --text: 'Karla', serif;
+    --black: #24262eff;
+    --white: #ddd6d0ff;
+    --light-blue: #8bb3d0ff;
+    --blue: #427aa1ff;
+    --dark-blue: #294c65ff;
+
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 576px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+
+    /* Font Sizes */
+    --font-normal: 1em;
+    --font-small: 0.8125rem;
+    /* Sidebar */
+    --sidebar-width: 75px;
+    --content-max-width: 860px;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box
+}
+
+html{
+    line-height: 1.15;
+}
+body{
+    color: var(--black);
+    overflow-x: hidden;
+}
+
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: var(--sidebar-width);
+    background: var(--white);
+}
+.header .site-title {
+    color: var(--dark-blue);
+    font-size:1.6em;
+    display: block;
+
+    font-family: var(--serif);
+    font-weight: 400;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    text-decoration: none;
+}
+
+.navbar{
+    height: 100%;
+}
+
+.navbar .title-link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-column{
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    margin: 0 !important;
+}
+
+.full-column{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+}
+
+
+/* --------------------------------------------------------------- */
+/*  Media Queries                                                  
+/* --------------------------------------------------------------- */
+
+@media (max-width: 991.98px) {
+    
+    .header {
+        position: sticky;
+        width: inherit;
+        height: auto
+    }
+
+    .header .site-title {
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 1.2rem;
+        display: block;
+        writing-mode: initial;
+        transform: rotate(0deg);
+    }
+
+    .header .navbar {
+        padding: 1rem
+    }
+
+}
+
+@media (max-width: 767.98px) {
+    
+}
