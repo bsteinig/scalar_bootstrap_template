@@ -39,13 +39,25 @@ body{
     overflow-x: hidden;
 }
 
+.main-wrapper{
+    margin-left: 4rem;
+}
+
+.header{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100vh;
+    width: 4rem;
+}
+
 .left-menu{
     height: 100vh;
     width: 4rem;
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 3;
+    z-index: 1100;
 
     display: flex;
     flex-direction: column;
@@ -59,7 +71,7 @@ body{
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 2;
+    z-index: 1099;
 
     display: flex;
     justify-content: center;
@@ -247,6 +259,11 @@ body{
 
 
 @media (max-width: 991.98px) {
+    .main-wrapper{
+        margin-left: 0;
+        margin-top: 4rem;
+    }
+
     .menu-popout{   
         padding: 4rem .5rem;
         border-width: 0 0 3px 0;
@@ -259,6 +276,10 @@ body{
         transform: translateY(0%);
         overflow: auto;
         transition: all .45s cubic-bezier(.23,1,.32,1);
+    }
+    .header{
+        height: 4rem;
+        width: 100vw;
     }
 
     .left-menu{
