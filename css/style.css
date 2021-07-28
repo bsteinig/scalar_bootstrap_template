@@ -258,13 +258,29 @@ body{
 
 .gradient{
     background-color: var(--dark-blue);
-    background: linear-gradient(0deg, var(--dark-blue) 0%, var(--blue) 200%);
+    background: linear-gradient(0deg, var(--dark-blue) 0%, var(--blue) 400%);
 }
 
 .heading{
     color: var(--white);
     font-family: var(--display);
     font-size: 3em;
+}
+
+.redirect{
+    text-decoration: none;
+}
+.redirect:visited{
+    text-decoration: none;
+}
+
+.gridish{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.grid-item{ 
+    flex: 1 1 440px;
 }
 
 .item{
@@ -276,6 +292,8 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
+    text-decoration: none;
 }
 .item:hover .img-wrap::before{
     opacity: 0.75;
@@ -309,7 +327,7 @@ body{
 
 .cover{
     opacity: 1;
-    
+    background-color: var(--black);
 }
 
 .card-title{
