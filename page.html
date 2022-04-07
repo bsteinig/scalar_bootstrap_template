@@ -21,7 +21,134 @@
 <body>
     <!--Nav Bar-->
     <div>
-        <iframe width="2500" height="1120" src="https://api.maptiler.com/maps/3bad7483-3ec2-4009-a54c-920ffa22163b/?key=2HRGHmvMS3awHj6WLWlh#13.9/42.29958/-83.74498"></iframe>
+        <!--Nav Bar-->
+    <header class="header text-center">
+        <div class="menu-popout">
+            <div class='menu-wrapper d-flex flex-column'>
+                <h1 class='menu-title h1 fs-2'>Teaching Data Literacy in Social Studies:</h1>
+                <h1 class='menu-title sub h1 fs-2'>An Interactive Professional Development Tool</h1>
+                <h3 class='menu-title author h1 fs-2'>By Tamara Shreiner</h3>
+                <div class="search-bar container-sm">
+                    <input type="text" class='search' placeholder='Search...'/>
+                    <button class="search-btn" type='button' onclick='showLoader()'><i class="fas fa-search"></i></button>
+                </div>
+                <div class="divider"></div>
+                <div class='loader'>Loading...</div>
+                <div class="table-contents">
+                    <div class="content-group container-sm px-4">
+                        <h1 class="number">01</h1>
+                        <h2 class="subtitle">What is data literacy?</h2>
+                        <p class="desc">This module provides an introduction to data literacy and its importance for informed and competent citizenship. </p>
+                    </div>
+                    <div class="content-group container-sm px-4">
+                        <h1 class="number">02</h1>
+                        <h2 class="subtitle">Why teach data literacy in social studies?</h2>
+                        <p class="desc">Not only is data literacy required by state standards and included in standardized assessments, it is important for understanding core social studies disciplines. This module addresses the role that data visualizations play in social studies standards, assessments, and texts. It also provides links to resources that can be used to support data literacy as a component of disciplinary literacy.</p>
+                    </div>
+                    <div class="content-group container-sm">
+                        <h1 class="number">03</h1>
+                        <h2 class="subtitle">What kinds of data visualizations will students encounter in social studies?</h2>
+                        <p class="desc">Information can be visualized in multiple ways, from bar graphs to scatterplots, choropleth maps to distribution maps, timelines to time series. Designers can choose from an array of graphical elements such as points, lines, or icons used to represent data, and multiple aesthetic attributes such as color, shape, and size. Furthermore, designers can apply multiple combinations of titles, legends, and explanatory text to provide context for a data…</p>
+                    </div>
+                    <div class="content-group container-sm">
+                        <h1 class="number">04</h1>
+                        <h2 class="subtitle">What is data literacy?</h2>
+                        <p class="desc">This module provides an introduction to data literacy and its importance for informed and competent citizenship. </p>
+                    </div>
+                    <div class="content-group container-sm">
+                        <h1 class="number">05</h1>
+                        <h2 class="subtitle">What is data literacy?</h2>
+                        <p class="desc">This module provides an introduction to data literacy and its importance for informed and competent citizenship. </p>
+                    </div>
+                    <div class="content-group container-sm">
+                        <h1 class="number">06</h1>
+                        <h2 class="subtitle">What is data literacy?</h2>
+                        <p class="desc">This module provides an introduction to data literacy and its importance for informed and competent citizenship. </p>
+                    </div>
+                    <div class="content-group container-sm">
+                        <h1 class="number">07</h1>
+                        <h2 class="subtitle">What is data literacy?</h2>
+                        <p class="desc">This module provides an introduction to data literacy and its importance for informed and competent citizenship. </p>
+                    </div>
+                    <div class="content-group container-sm">
+                        <h1 class="number">08</h1>
+                        <h2 class="subtitle">What is data literacy?</h2>
+                        <p class="desc">This module provides an introduction to data literacy and its importance for informed and competent citizenship. </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="left-menu">
+            <button class="hamburger hamburger--spin" type="button" onclick='showMenu()'>
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+            <h2 class='vertical-text'>Teaching Data Literacy in Social Studies</h2>
+            <a class='home-button' type='button' href='/'>
+                <i class="fas fa-home"></i>
+            </a>
+        </div>
+    </header>
+
+    <!--Everything Else-->
+    <div class="main-wrapper">
+	    <header class="page-title theme-bg-light rel-block py-5">
+            <div class="color-block"></div>
+            <div class="text-block"><h1 class="display-2 heading">Teaching Data Literacy in Social Studies</h1>
+                <h2 class="sub-heading">By: Tamara Shreiner</h2>
+            </div>
+		</header>
+
+		<article class="container-fluid content px-lg-1 py-5 px-4">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#anatomicalModal">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/22/Da_Vinci_Vitruve_Luc_Viatour.jpg" height='100px' class="img-thumbnail modal-thumbnail" alt="logo">
+                <p style="margin: 0;">Area Graphs</p>
+            </button>
+            <a href="#anatomicalModal" data-bs-toggle="modal"  role="button">Area Graphs</a>
+            <button type="button" class="btn btn-custom" data-bs-toggle="modal" data-bs-target="#bubbleModal">
+                <img src="https://scalar.usc.edu/works/teaching-data-literacy-in-social-studies-an-interactive-professional-development-tool/media/Screenshot%202020-05-05%2017.04.07.png" height='100px'  class="img-thumbnail modal-thumbnail" alt="logo">
+                <p style="margin: 0;">Bubble Maps</p>
+            </button>
+            <a data-bs-toggle="modal" href="#bubbleModal" role="button">Bubble Maps</a>
+            
+            <!-- Modal -->
+            <div class='modal fade' id='anatomicalModal' tabindex='-1' aria-labelledby='anatomicalModalLabel' aria-hidden='true'>
+                <div class='modal-dialog modal-fullscreen-sm-down'>
+                    <div class='modal-content'>
+                        <div class='modal-header'>
+                            <h5 class='modal-title' id='anatomicalModalLabel'>Anatomical Maps</h5>
+                            <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
+                        </div>
+                        <div class='modal-body'>
+                            <img src='https://upload.wikimedia.org/wikipedia/commons/2/22/Da_Vinci_Vitruve_Luc_Viatour.jpg' class='img-fluid' alt='Anatomical Maps'>
+                        </div>
+                        <div class='modal-footer'>
+                            <p>Anatomical maps show the proportions and parts of the human and other mammalian bodies. Leonardo da Vinci's Vitruvian Man which was created in about 1490 visualizes Roman architect Vitruvius's theories on proportion. It is considered an icon of the Renaissance's new image of man, which combined antique teachings with new scientific research.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class='modal fade' id='bubbleModal' tabindex='-1' aria-labelledby='bubbleModal-Label' aria-hidden='true'>
+                <div class='modal-dialog modal-fullscreen-sm-down'>
+                    <div class='modal-content'>
+                        <div class='modal-header'>
+                            <h5 class='modal-title' id='bubbleModal-Label'>Bubble Maps</h5>
+                            <button type='button' class='btn-close' data-bs-dismiss='modal' aria-label='Close'></button>
+                        </div>
+                        <div class='modal-body'>
+                            <img src='https://scalar.usc.edu/works/teaching-data-literacy-in-social-studies-an-interactive-professional-development-tool/media/Screenshot%202020-05-05%2017.04.07.png' class='img-fluid' alt='Bubble Maps'>
+                        </div>
+                        <div class='modal-footer'>
+                            <p>Bubble maps use circles to represent data over a geographical region. The area of the circle is proportional to its value in the dataset. Featured in a Time Magazine article, this bubble map showing the 2016 election results by county was a liberal answer to election maps favored by the Donald Trump administration and his supporters. However, as Albert Cairo has pointed out, this map is just as misleading as the ones favored by those on the right.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+  
+        </article>  
     
     </div><!--//main-wrapper-->
 

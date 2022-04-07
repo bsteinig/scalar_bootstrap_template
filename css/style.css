@@ -503,16 +503,26 @@ p {
     display: none;
   }
 
-  .img-fluid {
-    max-width: initial;
-    height: initial;
-
-    max-height: 100%;
-    width: auto;
-    vertical-align: baseline;
-  }
-
   .cover {
     object-fit: fill;
   }
+}
+
+
+/* New Styles */
+
+.btn-custom{
+  color: var(--white);
+  background-color: var(--light-blue);
+  border-color: var(--light-blue);
+}
+
+.btn-custom:hover{ 
+  color: var(--white);
+  background-color: var(--blue);
+  border-color: var(--blue);
+}
+
+.modal-thumbnail{
+  height: 100px !important;
 }
